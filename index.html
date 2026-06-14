@@ -282,103 +282,134 @@
       </div>
     </section>
 
+    <!-- =====================  PROJECTS SECTION  ===================== -->
     <section class="section" id="projects">
       <div class="container">
         <h2 class="sec-title">Projects</h2>
-        <p class="proj-more">
-          More at
-          <a href="https://github.com/bbinita" target="_blank" rel="noreferrer"
-            >github.com/bbinita</a
-          >
-        </p>
 
-        <div class="carousel-wrap" id="carousel">
-          <div class="carousel-slide active">
-            <img src="civic.jpeg" alt="CivicAid" class="slide-img" />
-            <div class="slide-overlay">
-              <div class="slide-title">
+        <div class="proj-grid">
+          <!-- CivicAid -->
+          <div class="proj-card">
+            <div class="proj-thumb">
+              <img src="civic.jpeg" alt="CivicAid screenshot" />
+            </div>
+            <div class="proj-body">
+              <h3 class="proj-name">
+                CivicAid — Civic Issue Reporting Platform
+              </h3>
+              <p class="proj-desc">
+                A full-stack civic complaint management system where citizens
+                submit, track, and upvote local issues. AI pipeline uses TF-IDF
+                + Naive Bayes for category classification and cosine similarity
+                for duplicate detection. JWT-authenticated REST API with
+                role-based access for citizens and admins, deployed on Render +
+                Vercel.
+              </p>
+              <div class="proj-tags">
+                <span class="proj-tag">Django</span>
+                <span class="proj-tag">DRF</span>
+                <span class="proj-tag">PostgreSQL</span>
+                <span class="proj-tag">JWT</span>
+                <span class="proj-tag">scikit-learn</span>
+                <span class="proj-tag">React.js</span>
+              </div>
+              <div class="proj-links">
                 <a
                   href="https://github.com/bbinita/civicaid"
                   target="_blank"
                   rel="noreferrer"
-                  >CivicAid</a
+                  class="proj-link gh"
                 >
+                  <svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"
+                    />
+                  </svg>
+                  GITHUB CODE →
+                </a>
+                <a
+                  href="#"
+                  target="_blank"
+                  rel="noreferrer"
+                  class="proj-link demo"
+                >
+                  LIVE DEMO ·
+                </a>
               </div>
-              <p class="slide-desc">
-                Civic complaint management system with JWT auth, RBAC, AI
-                classification via TF-IDF + Naive Bayes, and duplicate detection
-                using cosine similarity.
-              </p>
-              <p class="slide-stack">
-                DJANGO · DRF · POSTGRESQL · JWT · SCIKIT-LEARN · REACT
-              </p>
-              <a
-                class="slide-gh"
-                href="https://github.com/bbinita/civicaid"
-                target="_blank"
-                rel="noreferrer"
-                >View on GitHub →</a
-              >
             </div>
           </div>
 
-          <div class="carousel-slide">
-            <img src="jobconnect.jpeg" alt="JobConnect" class="slide-img" />
-            <div class="slide-overlay">
-              <div class="slide-title">
+          <!-- JobConnect -->
+          <div class="proj-card">
+            <div class="proj-thumb">
+              <img src="jobconnect.jpeg" alt="JobConnect screenshot" />
+            </div>
+            <div class="proj-body">
+              <h3 class="proj-name">JobConnect — Job Portal Backend</h3>
+              <p class="proj-desc">
+                Production-ready job portal backend with enforced status
+                transition validation, N+1 query elimination via select_related,
+                and Celery + Redis async email notifications. Fully
+                containerised with Docker and documented with Swagger. Built to
+                demonstrate clean service-layer architecture and real-world DRF
+                patterns.
+              </p>
+              <div class="proj-tags">
+                <span class="proj-tag">Django</span>
+                <span class="proj-tag">DRF</span>
+                <span class="proj-tag">PostgreSQL</span>
+                <span class="proj-tag">Celery</span>
+                <span class="proj-tag">Redis</span>
+                <span class="proj-tag">Docker</span>
+              </div>
+              <div class="proj-links">
                 <a
                   href="https://github.com/bbinita/job-portal"
                   target="_blank"
                   rel="noreferrer"
-                  >JobConnect</a
+                  class="proj-link gh"
                 >
+                  <svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"
+                    />
+                  </svg>
+                  GITHUB CODE →
+                </a>
+                <a
+                  href="#"
+                  target="_blank"
+                  rel="noreferrer"
+                  class="proj-link demo"
+                >
+                  LIVE DEMO ·
+                </a>
               </div>
-              <p class="slide-desc">
-                Job portal backend with status transition validation, N+1
-                optimisation, Celery + Redis async notifications, and Swagger
-                API docs.
-              </p>
-              <p class="slide-stack">
-                DJANGO · DRF · POSTGRESQL · CELERY · REDIS · DOCKER
-              </p>
-              <a
-                class="slide-gh"
-                href="https://github.com/bbinita/job-portal"
-                target="_blank"
-                rel="noreferrer"
-                >View on GitHub →</a
-              >
             </div>
           </div>
-
-          <button
-            class="carousel-btn prev"
-            onclick="move(-1)"
-            aria-label="Previous project"
-          >
-            &#8249;
-          </button>
-          <button
-            class="carousel-btn next"
-            onclick="move(1)"
-            aria-label="Next project"
-          >
-            &#8250;
-          </button>
         </div>
 
-        <div class="carousel-dots" id="dots">
-          <div class="dot active" onclick="goTo(0)"></div>
-          <div class="dot" onclick="goTo(1)"></div>
-        </div>
-
+        <!-- smaller cards -->
+        <p class="projects-subtitle">Other projects</p>
         <div class="proj-sub">
-          <div class="proj-card">
+          <div class="proj-card proj-card--sm">
             <div class="proj-icon">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="26"
-                height="26"
+                width="24"
+                height="24"
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="var(--accent)"
@@ -400,29 +431,98 @@
               >
             </h3>
             <p class="proj-desc">
-              A real-time chat app where users create or join rooms and exchange
-              live messages through WebSockets without page reloads.
+              Real-time chat app — users create or join rooms, live messaging
+              via WebSockets with no page reloads.
             </p>
             <div class="proj-tags">
-              <span class="proj-tag">Django</span>
-              <span class="proj-tag">WebSockets</span>
-              <span class="proj-tag">Python</span>
+              <span class="proj-tag">Django</span
+              ><span class="proj-tag">WebSockets</span
+              ><span class="proj-tag">Python</span>
             </div>
             <a
               href="https://github.com/bbinita/Chatterly-Real-Time-Chat-Rooms-in-Django"
               target="_blank"
               rel="noreferrer"
-              class="proj-link"
-              >GitHub</a
+              class="proj-link gh"
+              style="margin-top: auto; padding-top: 0.75rem"
             >
+              <svg
+                width="13"
+                height="13"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"
+                />
+              </svg>
+              GitHub
+            </a>
           </div>
 
-          <div class="proj-card">
+          <div class="proj-card proj-card--sm">
             <div class="proj-icon">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="26"
-                height="26"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="var(--accent)"
+                stroke-width="1.3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                <circle cx="12" cy="7" r="4" />
+              </svg>
+            </div>
+            <h3 class="proj-title">
+              <a
+                href="https://github.com/bbinita/django-auth-system"
+                target="_blank"
+                rel="noreferrer"
+                >Django Auth System</a
+              >
+            </h3>
+            <p class="proj-desc">
+              Full auth system — registration, login, logout, automated welcome
+              emails via SMTP, CSRF protection.
+            </p>
+            <div class="proj-tags">
+              <span class="proj-tag">Django</span
+              ><span class="proj-tag">SMTP</span
+              ><span class="proj-tag">Python</span>
+            </div>
+            <a
+              href="https://github.com/bbinita/django-auth-system"
+              target="_blank"
+              rel="noreferrer"
+              class="proj-link gh"
+              style="margin-top: auto; padding-top: 0.75rem"
+            >
+              <svg
+                width="13"
+                height="13"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"
+                />
+              </svg>
+              GitHub
+            </a>
+          </div>
+
+          <div class="proj-card proj-card--sm">
+            <div class="proj-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="var(--accent)"
@@ -442,74 +542,42 @@
               >
             </h3>
             <p class="proj-desc">
-              NumPy data analysis tool for tracking expenses with category-wise
-              breakdowns, overspending detection, and summary reports.
+              NumPy data analysis tool — category-wise expense breakdowns,
+              overspending detection, summary reports.
             </p>
             <div class="proj-tags">
-              <span class="proj-tag">Python</span>
-              <span class="proj-tag">NumPy</span>
-              <span class="proj-tag">Data Analysis</span>
+              <span class="proj-tag">Python</span
+              ><span class="proj-tag">NumPy</span
+              ><span class="proj-tag">Data Analysis</span>
             </div>
             <a
               href="https://github.com/bbinita/Numpy-expense-analyzer"
               target="_blank"
               rel="noreferrer"
-              class="proj-link"
-              >GitHub</a
+              class="proj-link gh"
+              style="margin-top: auto; padding-top: 0.75rem"
             >
-          </div>
-
-          <div class="proj-card">
-            <div class="proj-icon">
               <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="26"
-                height="26"
+                width="13"
+                height="13"
                 viewBox="0 0 24 24"
-                fill="none"
-                stroke="var(--accent)"
-                stroke-width="1.3"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                fill="currentColor"
+                aria-hidden="true"
               >
-                <rect x="3" y="3" width="7" height="7" />
-                <rect x="14" y="3" width="7" height="7" />
-                <rect x="3" y="14" width="7" height="7" />
-                <path d="M14 17h3v3M17 14h3v3M14 14h3" />
+                <path
+                  d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.sf.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"
+                />
               </svg>
-            </div>
-            <h3 class="proj-title">
-              <a
-                href="https://github.com/bbinita/Image-Matrix-Manipulation-using-NumPy"
-                target="_blank"
-                rel="noreferrer"
-                >Matrix Manipulation</a
-              >
-            </h3>
-            <p class="proj-desc">
-              Image processing simulation using 2D NumPy arrays for brightness
-              adjustment, masking, and pixel transformations.
-            </p>
-            <div class="proj-tags">
-              <span class="proj-tag">Python</span>
-              <span class="proj-tag">NumPy</span>
-              <span class="proj-tag">Image Processing</span>
-            </div>
-            <a
-              href="https://github.com/bbinita/Image-Matrix-Manipulation-using-NumPy"
-              target="_blank"
-              rel="noreferrer"
-              class="proj-link"
-              >GitHub</a
-            >
+              GitHub
+            </a>
           </div>
 
-          <div class="proj-card">
+          <div class="proj-card proj-card--sm">
             <div class="proj-icon">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="26"
-                height="26"
+                width="24"
+                height="24"
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="var(--accent)"
@@ -535,25 +603,44 @@
               >
             </h3>
             <p class="proj-desc">
-              AI-powered tool that compares a resume against a job description
-              using NLP, then returns a match score and missing keywords.
+              AI tool that compares a resume against a job description using NLP
+              — match score and missing keywords.
             </p>
             <div class="proj-tags">
-              <span class="proj-tag">Python</span>
-              <span class="proj-tag">Django</span>
-              <span class="proj-tag">NLTK</span>
-              <span class="proj-tag">scikit-learn</span>
-              <span class="proj-tag">pdfplumber</span>
+              <span class="proj-tag">Python</span
+              ><span class="proj-tag">Django</span
+              ><span class="proj-tag">NLTK</span
+              ><span class="proj-tag">scikit-learn</span>
             </div>
             <a
               href="https://github.com/bbinita/resume-screener"
               target="_blank"
               rel="noreferrer"
-              class="proj-link"
-              >GitHub</a
+              class="proj-link gh"
+              style="margin-top: auto; padding-top: 0.75rem"
             >
+              <svg
+                width="13"
+                height="13"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.sf.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"
+                />
+              </svg>
+              GitHub
+            </a>
           </div>
         </div>
+
+        <p class="proj-more">
+          More at
+          <a href="https://github.com/bbinita" target="_blank" rel="noreferrer"
+            >github.com/bbinita</a
+          >
+        </p>
       </div>
     </section>
 
