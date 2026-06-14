@@ -306,13 +306,13 @@ pre {
   max-width: 520px;
   color: var(--subtle);
   margin-top: 1rem;
-  font-size: clamp(1rem, 1.5vw, 1.15rem);
+  font-size: clamp(1.2rem, 2vw, 1.2rem);
   line-height: 1.85;
 }
 
 .hero-desc strong {
   color: var(--accent);
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .hero-proof {
@@ -482,7 +482,8 @@ pre {
 
 .info-card-title,
 .skill-card-title {
-  font-size: 1.05rem;
+  font-size: 1.2rem;
+  font-weight: 600;
   color: var(--accent);
   letter-spacing: 0.16em;
   margin-bottom: 1.25rem;
@@ -491,7 +492,7 @@ pre {
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
+  gap: 1.5rem;
 }
 
 .skill-card {
@@ -513,7 +514,7 @@ pre {
 }
 
 .tag {
-  font-size: 1rem;
+  font-size: 1.1rem;
   color: var(--subtle);
   background: var(--surface2);
   border: 1px solid var(--border);
@@ -529,11 +530,6 @@ pre {
   border-color: var(--accent);
 }
 
-/* ═══════════════════════════════════════════
-   PROJECTS — replace the existing project block in your CSS
-═══════════════════════════════════════════ */
-
-/* ── Big project grid (2 cols, equal height) ── */
 .proj-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -548,7 +544,6 @@ pre {
   }
 }
 
-/* ── Card shell shared by big + small ── */
 .proj-card {
   background: var(--surface);
   border: 1px solid var(--border);
@@ -566,7 +561,6 @@ pre {
   transform: translateY(-3px);
 }
 
-/* ── Screenshot — fixed height so both cards always match ── */
 .proj-thumb {
   width: 100%;
   height: 280px; /* fixed px height, not aspect-ratio */
@@ -607,9 +601,8 @@ pre {
   gap: 0.6rem;
 }
 
-/* ── Big card title ── */
 .proj-name {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: 700;
   color: var(--text);
   margin: 0;
@@ -619,7 +612,7 @@ pre {
 /* ── Description ── */
 .proj-desc {
   color: var(--subtle);
-  font-size: 1rem;
+  font-size: 1.1rem;
   line-height: 1.75;
   flex: 1;
   margin: 0;
@@ -634,7 +627,7 @@ pre {
 }
 
 .proj-tag {
-  font-size: 0.8rem;
+  font-size: 0.89rem;
   color: var(--subtle);
   background: var(--surface2);
   border: 1px solid var(--border);
@@ -649,19 +642,17 @@ pre {
   border-color: transparent;
 }
 
-/* ── Links row ── */
 .proj-links {
   display: flex;
   align-items: center;
-  gap: 1.25rem;
+  gap: 1.5rem;
   margin-top: auto;
   padding-top: 0.9rem;
   border-top: 1px solid var(--border);
 }
 
 .proj-link {
-  font-size: 0.7rem;
-  font-weight: 600;
+  font-size: 0.9rem;
   letter-spacing: 0.07em;
   text-transform: uppercase;
   text-decoration: none;
@@ -680,6 +671,7 @@ pre {
 }
 
 .proj-link.demo {
+  font-weight: 1000;
   color: var(--accent);
 }
 
@@ -700,9 +692,8 @@ pre {
   }
 }
 
-/* small card — explicit padding, NOT inheriting from mobile override */
 .proj-card--sm {
-  padding: 1.4rem !important; /* override the @media (max-width:560px) rule */
+  padding: 1.4rem !important;
   border-radius: 8px;
 }
 
@@ -728,7 +719,6 @@ pre {
   color: var(--accent);
 }
 
-/* ── "More at github" footer ── */
 .proj-more {
   margin-top: 1.75rem;
   text-align: center;
@@ -745,10 +735,9 @@ pre {
   text-decoration: underline;
 }
 
-/* ── Override: stop the 560px rule padding-crushing big proj-cards ── */
 @media (max-width: 560px) {
   .proj-card:not(.proj-card--sm) {
-    padding: 0; /* big cards have no outer padding; .proj-body handles it */
+    padding: 0;
   }
 }
 
@@ -784,7 +773,7 @@ pre {
 footer {
   text-align: center;
   padding: 1.5rem;
-  font-size: 0.8rem;
+  font-size: 0.95rem;
   color: var(--subtle);
 }
 
